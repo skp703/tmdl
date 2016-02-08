@@ -1,0 +1,8 @@
+# tmdl
+How was this chart made? (see https://github.com/skp703/ for data and data wrangling details)
+The data for this plot comes from USEPA URL http://iaspub.epa.gov/apex/waters/f?p=131:72:::NO:RP:P72_REGION,P72_LEAD_STATE,P72_POLLUTANT_GROUP,P72_FISCAL_YEAR_ESTABLISHED,P72_SEARCH_TERMS:99,XX,XX,XX,tmdl. This Search URL gets me anything that has word "tmdl" in the EPA ATTAINS database  (hopefully everything). What I got is at https://github.com/skp703/tmdl look for TMDL Document Search.html
+What I did was to download the table on the step 1 URL with "all" records (~20k). 
+Next, I downloaded everything from the table in step 2. This retrieved about 2400 files, about 4 gig of pdfs from USEPA site.
+Then some data manipulation to keep TMDL reports, and  eliminate other materials that was downloaded (decision letters, public comments, and appendices etc.). If you understand python data wrangling, my notebook is at https://github.com/skp703/tmdl/blob/master/tmdl_scraper.ipynb
+Next, a full text search for terms (models names and variations) in the pdf files. I was trying to get the frequency by which a models is mentioned in the report, with assumption that if a model is mentioned more than few (3?) times it has been used in that report in some way. I still need to look at this assumption in detail. Perhaps there are better features that may help me find the models used for developing the TMDL.
+That search gave me the data needed to create this plot. Raw data used here also available at https://raw.githubusercontent.com/skp703/tmdl/master/TMDL_model.csv and in excel at https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxrdW1hcnNhdXJhdnxneDo1YTI2YTI0NjY1NGNhZGQ2
