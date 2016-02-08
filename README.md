@@ -1,4 +1,6 @@
 # tmdl
+chart at http://occviz.com/tmdl
+
 ###How was this chart made? (see https://github.com/skp703/ for data and data wrangling details)
 1. The data for this plot comes from USEPA URL http://iaspub.epa.gov/apex/waters/f?p=131:72:::NO:RP:P72_REGION,P72_LEAD_STATE,P72_POLLUTANT_GROUP,P72_FISCAL_YEAR_ESTABLISHED,P72_SEARCH_TERMS:99,XX,XX,XX,tmdl. This Search URL gets me anything that has word "tmdl" in the EPA ATTAINS database  (hopefully everything). What I got is at https://github.com/skp703/tmdl look for TMDL Document Search.html
 2. What I did was to download the table on the step 1 URL with "all" records (~20k). 
