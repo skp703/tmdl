@@ -1,0 +1,1023 @@
+,count,has,prefers
+0,4.0,hspf,cequalriv
+1,9.0,hspf,usle
+2,18.0,hspf,efdc
+3,3.0,hspf,qual
+4,7.0,hspf,swmm
+5,5.0,hspf,curve number
+6,68.0,hspf,spreadsheet
+7,20.0,hspf,basins
+8,1.0,hspf,answers
+9,6.0,hspf,simple method
+10,7.0,hspf,gwlf
+11,1.0,hspf,mass balance
+12,4.0,hspf,cequalw2
+13,2.0,hspf,hec ras
+14,52.0,hspf,load duration curve
+15,5.0,hspf,swat
+16,1.0,hspf,minteq
+17,11.0,hspf,wasp
+18,6.0,hspf,agnps
+19,6.0,hspf,Ammonia
+20,1.0,hspf,Habitat Alterations
+21,5.0,hspf,Metals (other than Mercury)
+22,23.0,hspf,Nutrients
+23,27.0,hspf,Organic Enrichment/Oxygen Depletion
+24,1.0,hspf,Other Cause
+25,118.0,hspf,Pathogens
+26,2.0,hspf,Pesticides
+27,4.0,hspf,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+28,6.0,hspf,Sediment
+29,5.0,hspf,Turbidity
+30,3.0,hspf,pH/Acidity/Caustic Conditions
+0,4.0,cequalriv,hspf
+1,3.0,cequalriv,usle
+2,3.0,cequalriv,efdc
+3,3.0,cequalriv,swmm
+4,3.0,cequalriv,spreadsheet
+5,3.0,cequalriv,basins
+6,3.0,cequalriv,simple method
+7,3.0,cequalriv,gwlf
+8,1.0,cequalriv,mass balance
+9,3.0,cequalriv,cequalw2
+10,1.0,cequalriv,load duration curve
+11,3.0,cequalriv,swat
+12,2.0,cequalriv,wasp
+13,3.0,cequalriv,agnps
+14,4.0,cequalriv,Nutrients
+15,1.0,cequalriv,Organic Enrichment/Oxygen Depletion
+0,9.0,usle,hspf
+1,3.0,usle,cequalriv
+2,3.0,usle,efdc
+3,6.0,usle,sstemp
+4,4.0,usle,qual
+5,13.0,usle,swmm
+6,69.0,usle,curve number
+7,1.0,usle,stepl
+8,32.0,usle,spreadsheet
+9,33.0,usle,basins
+10,21.0,usle,simple method
+11,83.0,usle,gwlf
+12,2.0,usle,mass balance
+13,9.0,usle,cequalw2
+14,1.0,usle,hec ras
+15,4.0,usle,load duration curve
+16,16.0,usle,swat
+17,3.0,usle,wasp
+18,16.0,usle,agnps
+19,1.0,usle,Dioxins
+20,2.0,usle,Habitat Alterations
+21,4.0,usle,Mercury
+22,13.0,usle,Metals (other than Mercury)
+23,1.0,usle,Noxious Aquatic Plants
+24,64.0,usle,Nutrients
+25,18.0,usle,Organic Enrichment/Oxygen Depletion
+26,2.0,usle,Other Cause
+27,12.0,usle,Pathogens
+28,4.0,usle,Pesticides
+29,2.0,usle,Polychlorinated Biphenyls (PCBs)
+30,6.0,usle,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+31,86.0,usle,Sediment
+32,9.0,usle,Temperature
+33,1.0,usle,Toxic Inorganics
+34,14.0,usle,Turbidity
+35,5.0,usle,pH/Acidity/Caustic Conditions
+0,18.0,efdc,hspf
+1,3.0,efdc,cequalriv
+2,3.0,efdc,usle
+3,4.0,efdc,swmm
+4,5.0,efdc,spreadsheet
+5,11.0,efdc,basins
+6,3.0,efdc,simple method
+7,4.0,efdc,gwlf
+8,1.0,efdc,mass balance
+9,3.0,efdc,cequalw2
+10,1.0,efdc,load duration curve
+11,5.0,efdc,swat
+12,11.0,efdc,wasp
+13,3.0,efdc,agnps
+14,1.0,efdc,Ammonia
+15,18.0,efdc,Nutrients
+16,15.0,efdc,Organic Enrichment/Oxygen Depletion
+17,12.0,efdc,Pathogens
+0,6.0,sstemp,usle
+1,1.0,sstemp,spreadsheet
+2,1.0,sstemp,simple method
+3,1.0,sstemp,mass balance
+4,3.0,sstemp,load duration curve
+5,4.0,sstemp,Metals (other than Mercury)
+6,7.0,sstemp,Nutrients
+7,4.0,sstemp,Organic Enrichment/Oxygen Depletion
+8,6.0,sstemp,Pathogens
+9,4.0,sstemp,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+10,16.0,sstemp,Sediment
+11,32.0,sstemp,Temperature
+12,12.0,sstemp,Turbidity
+13,1.0,sstemp,pH/Acidity/Caustic Conditions
+0,3.0,qual,hspf
+1,4.0,qual,usle
+2,1.0,qual,curve number
+3,2.0,qual,spreadsheet
+4,1.0,qual,basins
+5,1.0,qual,simple method
+6,4.0,qual,gwlf
+7,2.0,qual,hec ras
+8,3.0,qual,load duration curve
+9,2.0,qual,swat
+10,1.0,qual,wasp
+11,2.0,qual,agnps
+12,1.0,qual,Metals (other than Mercury)
+13,4.0,qual,Nutrients
+14,2.0,qual,Organic Enrichment/Oxygen Depletion
+15,2.0,qual,Pathogens
+16,3.0,qual,Sediment
+17,3.0,qual,Temperature
+0,7.0,swmm,hspf
+1,3.0,swmm,cequalriv
+2,13.0,swmm,usle
+3,4.0,swmm,efdc
+4,9.0,swmm,curve number
+5,18.0,swmm,spreadsheet
+6,13.0,swmm,basins
+7,13.0,swmm,simple method
+8,12.0,swmm,gwlf
+9,1.0,swmm,mass balance
+10,4.0,swmm,cequalw2
+11,2.0,swmm,load duration curve
+12,5.0,swmm,swat
+13,4.0,swmm,wasp
+14,3.0,swmm,agnps
+15,1.0,swmm,Dioxins
+16,7.0,swmm,Metals (other than Mercury)
+17,13.0,swmm,Nutrients
+18,4.0,swmm,Organic Enrichment/Oxygen Depletion
+19,11.0,swmm,Pathogens
+20,1.0,swmm,Pesticides
+21,1.0,swmm,Polychlorinated Biphenyls (PCBs)
+22,4.0,swmm,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+23,1.0,swmm,Sediment
+24,1.0,swmm,Turbidity
+25,1.0,swmm,pH/Acidity/Caustic Conditions
+0,5.0,curve number,hspf
+1,69.0,curve number,usle
+2,1.0,curve number,qual
+3,9.0,curve number,swmm
+4,1.0,curve number,stepl
+5,14.0,curve number,spreadsheet
+6,30.0,curve number,basins
+7,14.0,curve number,simple method
+8,88.0,curve number,gwlf
+9,2.0,curve number,mass balance
+10,3.0,curve number,cequalw2
+11,9.0,curve number,load duration curve
+12,28.0,curve number,swat
+13,1.0,curve number,wasp
+14,8.0,curve number,agnps
+15,1.0,curve number,Ammonia
+16,3.0,curve number,Habitat Alterations
+17,2.0,curve number,Mercury
+18,5.0,curve number,Metals (other than Mercury)
+19,62.0,curve number,Nutrients
+20,9.0,curve number,Organic Enrichment/Oxygen Depletion
+21,13.0,curve number,Pathogens
+22,1.0,curve number,Polychlorinated Biphenyls (PCBs)
+23,4.0,curve number,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+24,26.0,curve number,Sediment
+25,3.0,curve number,Temperature
+26,8.0,curve number,Turbidity
+27,4.0,curve number,pH/Acidity/Caustic Conditions
+0,1.0,stepl,usle
+1,1.0,stepl,curve number
+2,5.0,stepl,spreadsheet
+3,1.0,stepl,simple method
+4,3.0,stepl,load duration curve
+5,1.0,stepl,Ammonia
+6,3.0,stepl,Nutrients
+7,2.0,stepl,Pathogens
+8,2.0,stepl,Polychlorinated Biphenyls (PCBs)
+9,1.0,stepl,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+10,2.0,stepl,Sediment
+11,2.0,stepl,Turbidity
+0,68.0,spreadsheet,hspf
+1,3.0,spreadsheet,cequalriv
+2,32.0,spreadsheet,usle
+3,5.0,spreadsheet,efdc
+4,1.0,spreadsheet,sstemp
+5,2.0,spreadsheet,qual
+6,18.0,spreadsheet,swmm
+7,14.0,spreadsheet,curve number
+8,5.0,spreadsheet,stepl
+9,60.0,spreadsheet,basins
+10,3.0,spreadsheet,hec-hms
+11,20.0,spreadsheet,simple method
+12,17.0,spreadsheet,gwlf
+13,3.0,spreadsheet,mass balance
+14,4.0,spreadsheet,cequalw2
+15,2.0,spreadsheet,hec ras
+16,25.0,spreadsheet,load duration curve
+17,9.0,spreadsheet,swat
+18,1.0,spreadsheet,minteq
+19,14.0,spreadsheet,tidal prism
+20,1.0,spreadsheet,warmf
+21,16.0,spreadsheet,wasp
+22,4.0,spreadsheet,agnps
+23,18.0,spreadsheet,Ammonia
+24,1.0,spreadsheet,Dioxins
+25,2.0,spreadsheet,Mercury
+26,18.0,spreadsheet,Metals (other than Mercury)
+27,55.0,spreadsheet,Nutrients
+28,84.0,spreadsheet,Organic Enrichment/Oxygen Depletion
+29,1.0,spreadsheet,Other Cause
+30,135.0,spreadsheet,Pathogens
+31,3.0,spreadsheet,Pesticides
+32,2.0,spreadsheet,Polychlorinated Biphenyls (PCBs)
+33,10.0,spreadsheet,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+34,29.0,spreadsheet,Sediment
+35,2.0,spreadsheet,Temperature
+36,1.0,spreadsheet,Toxic Inorganics
+37,2.0,spreadsheet,Trash
+38,60.0,spreadsheet,Turbidity
+39,6.0,spreadsheet,pH/Acidity/Caustic Conditions
+0,20.0,basins,hspf
+1,3.0,basins,cequalriv
+2,33.0,basins,usle
+3,11.0,basins,efdc
+4,1.0,basins,qual
+5,13.0,basins,swmm
+6,30.0,basins,curve number
+7,60.0,basins,spreadsheet
+8,1.0,basins,answers
+9,24.0,basins,simple method
+10,34.0,basins,gwlf
+11,3.0,basins,mass balance
+12,6.0,basins,cequalw2
+13,2.0,basins,hec ras
+14,8.0,basins,load duration curve
+15,12.0,basins,swat
+16,1.0,basins,warmf
+17,8.0,basins,wasp
+18,8.0,basins,agnps
+19,6.0,basins,Ammonia
+20,10.0,basins,Mercury
+21,9.0,basins,Metals (other than Mercury)
+22,30.0,basins,Nutrients
+23,24.0,basins,Organic Enrichment/Oxygen Depletion
+24,55.0,basins,Pathogens
+25,13.0,basins,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+26,9.0,basins,Sediment
+27,2.0,basins,Temperature
+28,1.0,basins,Total Toxics
+29,9.0,basins,Turbidity
+30,4.0,basins,pH/Acidity/Caustic Conditions
+0,3.0,hec-hms,spreadsheet
+1,3.0,hec-hms,simple method
+2,1.0,hec-hms,mass balance
+3,3.0,hec-hms,Metals (other than Mercury)
+4,1.0,hec-hms,Nutrients
+5,1.0,hec-hms,Turbidity
+6,3.0,hec-hms,pH/Acidity/Caustic Conditions
+0,1.0,answers,hspf
+1,1.0,answers,basins
+2,1.0,answers,Turbidity
+0,6.0,simple method,hspf
+1,3.0,simple method,cequalriv
+2,21.0,simple method,usle
+3,3.0,simple method,efdc
+4,1.0,simple method,sstemp
+5,1.0,simple method,qual
+6,13.0,simple method,swmm
+7,14.0,simple method,curve number
+8,1.0,simple method,stepl
+9,20.0,simple method,spreadsheet
+10,24.0,simple method,basins
+11,3.0,simple method,hec-hms
+12,16.0,simple method,gwlf
+13,4.0,simple method,mass balance
+14,4.0,simple method,cequalw2
+15,3.0,simple method,load duration curve
+16,4.0,simple method,swat
+17,3.0,simple method,wasp
+18,5.0,simple method,agnps
+19,1.0,simple method,Ammonia
+20,1.0,simple method,Dioxins
+21,1.0,simple method,Mercury
+22,15.0,simple method,Metals (other than Mercury)
+23,40.0,simple method,Nutrients
+24,5.0,simple method,Organic Enrichment/Oxygen Depletion
+25,22.0,simple method,Pathogens
+26,1.0,simple method,Pesticides
+27,3.0,simple method,Polychlorinated Biphenyls (PCBs)
+28,9.0,simple method,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+29,5.0,simple method,Sediment
+30,2.0,simple method,Temperature
+31,1.0,simple method,Turbidity
+32,5.0,simple method,pH/Acidity/Caustic Conditions
+0,7.0,gwlf,hspf
+1,3.0,gwlf,cequalriv
+2,83.0,gwlf,usle
+3,4.0,gwlf,efdc
+4,4.0,gwlf,qual
+5,12.0,gwlf,swmm
+6,88.0,gwlf,curve number
+7,17.0,gwlf,spreadsheet
+8,34.0,gwlf,basins
+9,16.0,gwlf,simple method
+10,5.0,gwlf,mass balance
+11,6.0,gwlf,cequalw2
+12,13.0,gwlf,load duration curve
+13,28.0,gwlf,swat
+14,3.0,gwlf,wasp
+15,11.0,gwlf,agnps
+16,2.0,gwlf,Ammonia
+17,2.0,gwlf,Habitat Alterations
+18,5.0,gwlf,Mercury
+19,17.0,gwlf,Metals (other than Mercury)
+20,72.0,gwlf,Nutrients
+21,11.0,gwlf,Organic Enrichment/Oxygen Depletion
+22,6.0,gwlf,Pathogens
+23,4.0,gwlf,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+24,34.0,gwlf,Sediment
+25,1.0,gwlf,Temperature
+26,17.0,gwlf,Turbidity
+27,5.0,gwlf,pH/Acidity/Caustic Conditions
+0,1.0,mass balance,hspf
+1,1.0,mass balance,cequalriv
+2,2.0,mass balance,usle
+3,1.0,mass balance,efdc
+4,1.0,mass balance,sstemp
+5,1.0,mass balance,swmm
+6,2.0,mass balance,curve number
+7,3.0,mass balance,spreadsheet
+8,3.0,mass balance,basins
+9,1.0,mass balance,hec-hms
+10,4.0,mass balance,simple method
+11,5.0,mass balance,gwlf
+12,1.0,mass balance,cequalw2
+13,1.0,mass balance,load duration curve
+14,1.0,mass balance,swat
+15,1.0,mass balance,tidal prism
+16,1.0,mass balance,wasp
+17,1.0,mass balance,agnps
+18,1.0,mass balance,Ammonia
+19,1.0,mass balance,Metals (other than Mercury)
+20,11.0,mass balance,Nutrients
+21,4.0,mass balance,Organic Enrichment/Oxygen Depletion
+22,2.0,mass balance,Other Cause
+23,5.0,mass balance,Pathogens
+24,1.0,mass balance,Pesticides
+25,1.0,mass balance,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+26,4.0,mass balance,Sediment
+27,2.0,mass balance,Temperature
+28,2.0,mass balance,Turbidity
+29,3.0,mass balance,pH/Acidity/Caustic Conditions
+0,4.0,cequalw2,hspf
+1,3.0,cequalw2,cequalriv
+2,9.0,cequalw2,usle
+3,3.0,cequalw2,efdc
+4,4.0,cequalw2,swmm
+5,3.0,cequalw2,curve number
+6,4.0,cequalw2,spreadsheet
+7,6.0,cequalw2,basins
+8,4.0,cequalw2,simple method
+9,6.0,cequalw2,gwlf
+10,1.0,cequalw2,mass balance
+11,1.0,cequalw2,load duration curve
+12,6.0,cequalw2,swat
+13,3.0,cequalw2,wasp
+14,6.0,cequalw2,agnps
+15,2.0,cequalw2,Ammonia
+16,1.0,cequalw2,Dioxins
+17,1.0,cequalw2,Metals (other than Mercury)
+18,7.0,cequalw2,Nutrients
+19,6.0,cequalw2,Organic Enrichment/Oxygen Depletion
+20,2.0,cequalw2,Other Cause
+21,2.0,cequalw2,Pathogens
+22,3.0,cequalw2,Pesticides
+23,1.0,cequalw2,Polychlorinated Biphenyls (PCBs)
+24,3.0,cequalw2,Sediment
+25,2.0,cequalw2,Temperature
+26,2.0,cequalw2,pH/Acidity/Caustic Conditions
+0,2.0,concepts,agnps
+1,2.0,concepts,Sediment
+0,2.0,hec ras,hspf
+1,1.0,hec ras,usle
+2,2.0,hec ras,qual
+3,2.0,hec ras,spreadsheet
+4,2.0,hec ras,basins
+5,1.0,hec ras,load duration curve
+6,1.0,hec ras,swat
+7,2.0,hec ras,wasp
+8,1.0,hec ras,Metals (other than Mercury)
+9,1.0,hec ras,Nutrients
+10,3.0,hec ras,Organic Enrichment/Oxygen Depletion
+11,1.0,hec ras,Pathogens
+12,2.0,hec ras,Sediment
+13,1.0,hec ras,Temperature
+14,1.0,hec ras,Turbidity
+15,1.0,hec ras,pH/Acidity/Caustic Conditions
+0,52.0,load duration curve,hspf
+1,1.0,load duration curve,cequalriv
+2,4.0,load duration curve,usle
+3,1.0,load duration curve,efdc
+4,3.0,load duration curve,sstemp
+5,3.0,load duration curve,qual
+6,2.0,load duration curve,swmm
+7,9.0,load duration curve,curve number
+8,3.0,load duration curve,stepl
+9,25.0,load duration curve,spreadsheet
+10,8.0,load duration curve,basins
+11,3.0,load duration curve,simple method
+12,13.0,load duration curve,gwlf
+13,1.0,load duration curve,mass balance
+14,1.0,load duration curve,cequalw2
+15,1.0,load duration curve,hec ras
+16,7.0,load duration curve,swat
+17,1.0,load duration curve,minteq
+18,1.0,load duration curve,tidal prism
+19,1.0,load duration curve,warmf
+20,2.0,load duration curve,wasp
+21,3.0,load duration curve,agnps
+22,4.0,load duration curve,Ammonia
+23,1.0,load duration curve,Habitat Alterations
+24,1.0,load duration curve,Mercury
+25,22.0,load duration curve,Metals (other than Mercury)
+26,27.0,load duration curve,Nutrients
+27,9.0,load duration curve,Organic Enrichment/Oxygen Depletion
+28,203.0,load duration curve,Pathogens
+29,1.0,load duration curve,Pesticides
+30,8.0,load duration curve,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+31,11.0,load duration curve,Sediment
+32,3.0,load duration curve,Temperature
+33,26.0,load duration curve,Turbidity
+34,4.0,load duration curve,pH/Acidity/Caustic Conditions
+0,5.0,swat,hspf
+1,3.0,swat,cequalriv
+2,16.0,swat,usle
+3,5.0,swat,efdc
+4,2.0,swat,qual
+5,5.0,swat,swmm
+6,28.0,swat,curve number
+7,9.0,swat,spreadsheet
+8,12.0,swat,basins
+9,4.0,swat,simple method
+10,28.0,swat,gwlf
+11,1.0,swat,mass balance
+12,6.0,swat,cequalw2
+13,1.0,swat,hec ras
+14,7.0,swat,load duration curve
+15,4.0,swat,wasp
+16,9.0,swat,agnps
+17,2.0,swat,Habitat Alterations
+18,12.0,swat,Metals (other than Mercury)
+19,38.0,swat,Nutrients
+20,8.0,swat,Organic Enrichment/Oxygen Depletion
+21,3.0,swat,Pathogens
+22,8.0,swat,Sediment
+23,1.0,swat,Temperature
+24,2.0,swat,Toxic Inorganics
+25,3.0,swat,Turbidity
+26,7.0,swat,pH/Acidity/Caustic Conditions
+0,1.0,minteq,hspf
+1,1.0,minteq,spreadsheet
+2,1.0,minteq,load duration curve
+3,3.0,minteq,Metals (other than Mercury)
+0,14.0,tidal prism,spreadsheet
+1,1.0,tidal prism,mass balance
+2,1.0,tidal prism,load duration curve
+3,3.0,tidal prism,wasp
+4,1.0,tidal prism,Ammonia
+5,4.0,tidal prism,Nutrients
+6,12.0,tidal prism,Organic Enrichment/Oxygen Depletion
+7,7.0,tidal prism,Pathogens
+8,1.0,tidal prism,Sediment
+9,1.0,tidal prism,Temperature
+0,1.0,warmf,spreadsheet
+1,1.0,warmf,basins
+2,1.0,warmf,load duration curve
+3,2.0,warmf,Ammonia
+4,2.0,warmf,Nutrients
+5,2.0,warmf,Pathogens
+0,11.0,wasp,hspf
+1,2.0,wasp,cequalriv
+2,3.0,wasp,usle
+3,11.0,wasp,efdc
+4,1.0,wasp,qual
+5,4.0,wasp,swmm
+6,1.0,wasp,curve number
+7,16.0,wasp,spreadsheet
+8,8.0,wasp,basins
+9,3.0,wasp,simple method
+10,3.0,wasp,gwlf
+11,1.0,wasp,mass balance
+12,3.0,wasp,cequalw2
+13,2.0,wasp,hec ras
+14,2.0,wasp,load duration curve
+15,4.0,wasp,swat
+16,3.0,wasp,tidal prism
+17,2.0,wasp,agnps
+18,4.0,wasp,Ammonia
+19,2.0,wasp,Dioxins
+20,16.0,wasp,Mercury
+21,4.0,wasp,Metals (other than Mercury)
+22,35.0,wasp,Nutrients
+23,55.0,wasp,Organic Enrichment/Oxygen Depletion
+24,1.0,wasp,Other Cause
+25,5.0,wasp,Pathogens
+26,2.0,wasp,Polychlorinated Biphenyls (PCBs)
+27,2.0,wasp,Sediment
+28,1.0,wasp,Total Toxics
+29,2.0,wasp,Toxic Organics
+30,2.0,wasp,Turbidity
+31,1.0,wasp,pH/Acidity/Caustic Conditions
+0,6.0,agnps,hspf
+1,3.0,agnps,cequalriv
+2,16.0,agnps,usle
+3,3.0,agnps,efdc
+4,2.0,agnps,qual
+5,3.0,agnps,swmm
+6,8.0,agnps,curve number
+7,4.0,agnps,spreadsheet
+8,8.0,agnps,basins
+9,5.0,agnps,simple method
+10,11.0,agnps,gwlf
+11,1.0,agnps,mass balance
+12,6.0,agnps,cequalw2
+13,2.0,agnps,concepts
+14,3.0,agnps,load duration curve
+15,9.0,agnps,swat
+16,2.0,agnps,wasp
+17,1.0,agnps,Metals (other than Mercury)
+18,14.0,agnps,Nutrients
+19,6.0,agnps,Organic Enrichment/Oxygen Depletion
+20,1.0,agnps,Pathogens
+21,12.0,agnps,Sediment
+22,1.0,agnps,Turbidity
+0,6.0,Ammonia,hspf
+1,1.0,Ammonia,efdc
+2,1.0,Ammonia,curve number
+3,1.0,Ammonia,stepl
+4,18.0,Ammonia,spreadsheet
+5,6.0,Ammonia,basins
+6,1.0,Ammonia,simple method
+7,2.0,Ammonia,gwlf
+8,1.0,Ammonia,mass balance
+9,2.0,Ammonia,cequalw2
+10,4.0,Ammonia,load duration curve
+11,1.0,Ammonia,tidal prism
+12,2.0,Ammonia,warmf
+13,4.0,Ammonia,wasp
+14,3.0,Ammonia,Chlorine
+15,5.0,Ammonia,Metals (other than Mercury)
+16,1.0,Ammonia,Noxious Aquatic Plants
+17,30.0,Ammonia,Nutrients
+18,39.0,Ammonia,Organic Enrichment/Oxygen Depletion
+19,10.0,Ammonia,Pathogens
+20,1.0,Ammonia,Pesticides
+21,6.0,Ammonia,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+22,6.0,Ammonia,Sediment
+23,4.0,Ammonia,Temperature
+24,1.0,Ammonia,Toxic Inorganics
+25,5.0,Ammonia,Turbidity
+26,3.0,Ammonia,pH/Acidity/Caustic Conditions
+0,3.0,Chlorine,Ammonia
+1,3.0,Chlorine,Metals (other than Mercury)
+2,2.0,Chlorine,Organic Enrichment/Oxygen Depletion
+3,2.0,Chlorine,Pathogens
+4,1.0,Chlorine,Sediment
+5,2.0,Chlorine,Total Toxics
+6,2.0,Chlorine,pH/Acidity/Caustic Conditions
+0,1.0,Dioxins,usle
+1,1.0,Dioxins,swmm
+2,1.0,Dioxins,spreadsheet
+3,1.0,Dioxins,simple method
+4,1.0,Dioxins,cequalw2
+5,2.0,Dioxins,wasp
+6,1.0,Dioxins,Metals (other than Mercury)
+7,1.0,Dioxins,Nutrients
+8,1.0,Dioxins,Organic Enrichment/Oxygen Depletion
+9,1.0,Dioxins,Pathogens
+10,1.0,Dioxins,Pesticides
+11,1.0,Dioxins,Polychlorinated Biphenyls (PCBs)
+12,1.0,Dioxins,Toxic Organics
+13,1.0,Dioxins,pH/Acidity/Caustic Conditions
+0,1.0,Habitat Alterations,hspf
+1,2.0,Habitat Alterations,usle
+2,3.0,Habitat Alterations,curve number
+3,2.0,Habitat Alterations,gwlf
+4,1.0,Habitat Alterations,load duration curve
+5,2.0,Habitat Alterations,swat
+6,1.0,Habitat Alterations,Metals (other than Mercury)
+7,3.0,Habitat Alterations,Nutrients
+8,3.0,Habitat Alterations,Organic Enrichment/Oxygen Depletion
+9,1.0,Habitat Alterations,Pathogens
+10,4.0,Habitat Alterations,Sediment
+11,2.0,Habitat Alterations,Turbidity
+0,4.0,Mercury,usle
+1,2.0,Mercury,curve number
+2,2.0,Mercury,spreadsheet
+3,10.0,Mercury,basins
+4,1.0,Mercury,simple method
+5,5.0,Mercury,gwlf
+6,1.0,Mercury,load duration curve
+7,16.0,Mercury,wasp
+8,7.0,Mercury,Metals (other than Mercury)
+9,1.0,Mercury,Organic Enrichment/Oxygen Depletion
+10,1.0,Mercury,Other Cause
+11,1.0,Mercury,Pathogens
+12,2.0,Mercury,Pesticides
+13,3.0,Mercury,Polychlorinated Biphenyls (PCBs)
+14,2.0,Mercury,Sediment
+15,1.0,Mercury,Total Toxics
+16,1.0,Mercury,Toxic Inorganics
+17,3.0,Mercury,Toxic Organics
+18,1.0,Mercury,pH/Acidity/Caustic Conditions
+0,5.0,Metals (other than Mercury),hspf
+1,13.0,Metals (other than Mercury),usle
+2,4.0,Metals (other than Mercury),sstemp
+3,1.0,Metals (other than Mercury),qual
+4,7.0,Metals (other than Mercury),swmm
+5,5.0,Metals (other than Mercury),curve number
+6,18.0,Metals (other than Mercury),spreadsheet
+7,9.0,Metals (other than Mercury),basins
+8,3.0,Metals (other than Mercury),hec-hms
+9,15.0,Metals (other than Mercury),simple method
+10,17.0,Metals (other than Mercury),gwlf
+11,1.0,Metals (other than Mercury),mass balance
+12,1.0,Metals (other than Mercury),cequalw2
+13,1.0,Metals (other than Mercury),hec ras
+14,22.0,Metals (other than Mercury),load duration curve
+15,12.0,Metals (other than Mercury),swat
+16,3.0,Metals (other than Mercury),minteq
+17,4.0,Metals (other than Mercury),wasp
+18,1.0,Metals (other than Mercury),agnps
+19,5.0,Metals (other than Mercury),Ammonia
+20,3.0,Metals (other than Mercury),Chlorine
+21,1.0,Metals (other than Mercury),Dioxins
+22,1.0,Metals (other than Mercury),Habitat Alterations
+23,7.0,Metals (other than Mercury),Mercury
+24,8.0,Metals (other than Mercury),Nutrients
+25,6.0,Metals (other than Mercury),Organic Enrichment/Oxygen Depletion
+26,1.0,Metals (other than Mercury),Other Cause
+27,11.0,Metals (other than Mercury),Pathogens
+28,4.0,Metals (other than Mercury),Pesticides
+29,5.0,Metals (other than Mercury),Polychlorinated Biphenyls (PCBs)
+30,10.0,Metals (other than Mercury),Salinity/Total Dissolved Solids/Chlorides/Sulfates
+31,12.0,Metals (other than Mercury),Sediment
+32,5.0,Metals (other than Mercury),Temperature
+33,2.0,Metals (other than Mercury),Total Toxics
+34,7.0,Metals (other than Mercury),Toxic Inorganics
+35,3.0,Metals (other than Mercury),Toxic Organics
+36,10.0,Metals (other than Mercury),Turbidity
+37,24.0,Metals (other than Mercury),pH/Acidity/Caustic Conditions
+0,1.0,Noxious Aquatic Plants,usle
+1,1.0,Noxious Aquatic Plants,Ammonia
+2,2.0,Noxious Aquatic Plants,Nutrients
+0,23.0,Nutrients,hspf
+1,4.0,Nutrients,cequalriv
+2,64.0,Nutrients,usle
+3,18.0,Nutrients,efdc
+4,7.0,Nutrients,sstemp
+5,4.0,Nutrients,qual
+6,13.0,Nutrients,swmm
+7,62.0,Nutrients,curve number
+8,3.0,Nutrients,stepl
+9,55.0,Nutrients,spreadsheet
+10,30.0,Nutrients,basins
+11,1.0,Nutrients,hec-hms
+12,40.0,Nutrients,simple method
+13,72.0,Nutrients,gwlf
+14,11.0,Nutrients,mass balance
+15,7.0,Nutrients,cequalw2
+16,1.0,Nutrients,hec ras
+17,27.0,Nutrients,load duration curve
+18,38.0,Nutrients,swat
+19,4.0,Nutrients,tidal prism
+20,2.0,Nutrients,warmf
+21,35.0,Nutrients,wasp
+22,14.0,Nutrients,agnps
+23,30.0,Nutrients,Ammonia
+24,1.0,Nutrients,Dioxins
+25,3.0,Nutrients,Habitat Alterations
+26,8.0,Nutrients,Metals (other than Mercury)
+27,2.0,Nutrients,Noxious Aquatic Plants
+28,1.0,Nutrients,Oil and Grease
+29,116.0,Nutrients,Organic Enrichment/Oxygen Depletion
+30,38.0,Nutrients,Pathogens
+31,2.0,Nutrients,Pesticides
+32,2.0,Nutrients,Polychlorinated Biphenyls (PCBs)
+33,4.0,Nutrients,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+34,59.0,Nutrients,Sediment
+35,24.0,Nutrients,Temperature
+36,32.0,Nutrients,Turbidity
+37,12.0,Nutrients,pH/Acidity/Caustic Conditions
+0,1.0,Oil and Grease,Nutrients
+1,1.0,Oil and Grease,Pathogens
+2,1.0,Oil and Grease,Turbidity
+0,27.0,Organic Enrichment/Oxygen Depletion,hspf
+1,1.0,Organic Enrichment/Oxygen Depletion,cequalriv
+2,18.0,Organic Enrichment/Oxygen Depletion,usle
+3,15.0,Organic Enrichment/Oxygen Depletion,efdc
+4,4.0,Organic Enrichment/Oxygen Depletion,sstemp
+5,2.0,Organic Enrichment/Oxygen Depletion,qual
+6,4.0,Organic Enrichment/Oxygen Depletion,swmm
+7,9.0,Organic Enrichment/Oxygen Depletion,curve number
+8,84.0,Organic Enrichment/Oxygen Depletion,spreadsheet
+9,24.0,Organic Enrichment/Oxygen Depletion,basins
+10,5.0,Organic Enrichment/Oxygen Depletion,simple method
+11,11.0,Organic Enrichment/Oxygen Depletion,gwlf
+12,4.0,Organic Enrichment/Oxygen Depletion,mass balance
+13,6.0,Organic Enrichment/Oxygen Depletion,cequalw2
+14,3.0,Organic Enrichment/Oxygen Depletion,hec ras
+15,9.0,Organic Enrichment/Oxygen Depletion,load duration curve
+16,8.0,Organic Enrichment/Oxygen Depletion,swat
+17,12.0,Organic Enrichment/Oxygen Depletion,tidal prism
+18,55.0,Organic Enrichment/Oxygen Depletion,wasp
+19,6.0,Organic Enrichment/Oxygen Depletion,agnps
+20,39.0,Organic Enrichment/Oxygen Depletion,Ammonia
+21,2.0,Organic Enrichment/Oxygen Depletion,Chlorine
+22,1.0,Organic Enrichment/Oxygen Depletion,Dioxins
+23,3.0,Organic Enrichment/Oxygen Depletion,Habitat Alterations
+24,1.0,Organic Enrichment/Oxygen Depletion,Mercury
+25,6.0,Organic Enrichment/Oxygen Depletion,Metals (other than Mercury)
+26,116.0,Organic Enrichment/Oxygen Depletion,Nutrients
+27,19.0,Organic Enrichment/Oxygen Depletion,Pathogens
+28,2.0,Organic Enrichment/Oxygen Depletion,Pesticides
+29,1.0,Organic Enrichment/Oxygen Depletion,Polychlorinated Biphenyls (PCBs)
+30,4.0,Organic Enrichment/Oxygen Depletion,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+31,26.0,Organic Enrichment/Oxygen Depletion,Sediment
+32,13.0,Organic Enrichment/Oxygen Depletion,Temperature
+33,3.0,Organic Enrichment/Oxygen Depletion,Total Toxics
+34,13.0,Organic Enrichment/Oxygen Depletion,Turbidity
+35,15.0,Organic Enrichment/Oxygen Depletion,pH/Acidity/Caustic Conditions
+0,1.0,Other Cause,hspf
+1,2.0,Other Cause,usle
+2,1.0,Other Cause,spreadsheet
+3,2.0,Other Cause,mass balance
+4,2.0,Other Cause,cequalw2
+5,1.0,Other Cause,wasp
+6,1.0,Other Cause,Mercury
+7,1.0,Other Cause,Metals (other than Mercury)
+8,1.0,Other Cause,Pathogens
+9,3.0,Other Cause,Pesticides
+10,2.0,Other Cause,Polychlorinated Biphenyls (PCBs)
+11,2.0,Other Cause,Sediment
+12,1.0,Other Cause,Temperature
+13,3.0,Other Cause,Total Toxics
+14,1.0,Other Cause,Toxic Organics
+0,118.0,Pathogens,hspf
+1,12.0,Pathogens,usle
+2,12.0,Pathogens,efdc
+3,6.0,Pathogens,sstemp
+4,2.0,Pathogens,qual
+5,11.0,Pathogens,swmm
+6,13.0,Pathogens,curve number
+7,2.0,Pathogens,stepl
+8,135.0,Pathogens,spreadsheet
+9,55.0,Pathogens,basins
+10,22.0,Pathogens,simple method
+11,6.0,Pathogens,gwlf
+12,5.0,Pathogens,mass balance
+13,2.0,Pathogens,cequalw2
+14,1.0,Pathogens,hec ras
+15,203.0,Pathogens,load duration curve
+16,3.0,Pathogens,swat
+17,7.0,Pathogens,tidal prism
+18,2.0,Pathogens,warmf
+19,5.0,Pathogens,wasp
+20,1.0,Pathogens,agnps
+21,10.0,Pathogens,Ammonia
+22,2.0,Pathogens,Chlorine
+23,1.0,Pathogens,Dioxins
+24,1.0,Pathogens,Habitat Alterations
+25,1.0,Pathogens,Mercury
+26,11.0,Pathogens,Metals (other than Mercury)
+27,38.0,Pathogens,Nutrients
+28,1.0,Pathogens,Oil and Grease
+29,19.0,Pathogens,Organic Enrichment/Oxygen Depletion
+30,1.0,Pathogens,Other Cause
+31,1.0,Pathogens,Pesticides
+32,1.0,Pathogens,Polychlorinated Biphenyls (PCBs)
+33,1.0,Pathogens,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+34,32.0,Pathogens,Sediment
+35,26.0,Pathogens,Temperature
+36,2.0,Pathogens,Total Toxics
+37,17.0,Pathogens,Turbidity
+38,9.0,Pathogens,pH/Acidity/Caustic Conditions
+0,2.0,Pesticides,hspf
+1,4.0,Pesticides,usle
+2,1.0,Pesticides,swmm
+3,3.0,Pesticides,spreadsheet
+4,1.0,Pesticides,simple method
+5,1.0,Pesticides,mass balance
+6,3.0,Pesticides,cequalw2
+7,1.0,Pesticides,load duration curve
+8,1.0,Pesticides,Ammonia
+9,1.0,Pesticides,Dioxins
+10,2.0,Pesticides,Mercury
+11,4.0,Pesticides,Metals (other than Mercury)
+12,2.0,Pesticides,Nutrients
+13,2.0,Pesticides,Organic Enrichment/Oxygen Depletion
+14,3.0,Pesticides,Other Cause
+15,1.0,Pesticides,Pathogens
+16,6.0,Pesticides,Polychlorinated Biphenyls (PCBs)
+17,2.0,Pesticides,Sediment
+18,1.0,Pesticides,Temperature
+19,2.0,Pesticides,Total Toxics
+20,1.0,Pesticides,Toxic Organics
+21,3.0,Pesticides,Turbidity
+22,1.0,Pesticides,pH/Acidity/Caustic Conditions
+0,2.0,Polychlorinated Biphenyls (PCBs),usle
+1,1.0,Polychlorinated Biphenyls (PCBs),swmm
+2,1.0,Polychlorinated Biphenyls (PCBs),curve number
+3,2.0,Polychlorinated Biphenyls (PCBs),stepl
+4,2.0,Polychlorinated Biphenyls (PCBs),spreadsheet
+5,3.0,Polychlorinated Biphenyls (PCBs),simple method
+6,1.0,Polychlorinated Biphenyls (PCBs),cequalw2
+7,2.0,Polychlorinated Biphenyls (PCBs),wasp
+8,1.0,Polychlorinated Biphenyls (PCBs),Dioxins
+9,3.0,Polychlorinated Biphenyls (PCBs),Mercury
+10,5.0,Polychlorinated Biphenyls (PCBs),Metals (other than Mercury)
+11,2.0,Polychlorinated Biphenyls (PCBs),Nutrients
+12,1.0,Polychlorinated Biphenyls (PCBs),Organic Enrichment/Oxygen Depletion
+13,2.0,Polychlorinated Biphenyls (PCBs),Other Cause
+14,1.0,Polychlorinated Biphenyls (PCBs),Pathogens
+15,6.0,Polychlorinated Biphenyls (PCBs),Pesticides
+16,3.0,Polychlorinated Biphenyls (PCBs),Sediment
+17,3.0,Polychlorinated Biphenyls (PCBs),Total Toxics
+18,2.0,Polychlorinated Biphenyls (PCBs),Toxic Organics
+19,1.0,Polychlorinated Biphenyls (PCBs),pH/Acidity/Caustic Conditions
+0,4.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,hspf
+1,6.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,usle
+2,4.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,sstemp
+3,4.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,swmm
+4,4.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,curve number
+5,1.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,stepl
+6,10.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,spreadsheet
+7,13.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,basins
+8,9.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,simple method
+9,4.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,gwlf
+10,1.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,mass balance
+11,8.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,load duration curve
+12,6.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Ammonia
+13,10.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Metals (other than Mercury)
+14,4.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Nutrients
+15,4.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Organic Enrichment/Oxygen Depletion
+16,1.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Pathogens
+17,6.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Sediment
+18,5.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Temperature
+19,5.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,Turbidity
+20,2.0,Salinity/Total Dissolved Solids/Chlorides/Sulfates,pH/Acidity/Caustic Conditions
+0,6.0,Sediment,hspf
+1,86.0,Sediment,usle
+2,16.0,Sediment,sstemp
+3,3.0,Sediment,qual
+4,1.0,Sediment,swmm
+5,26.0,Sediment,curve number
+6,2.0,Sediment,stepl
+7,29.0,Sediment,spreadsheet
+8,9.0,Sediment,basins
+9,5.0,Sediment,simple method
+10,34.0,Sediment,gwlf
+11,4.0,Sediment,mass balance
+12,3.0,Sediment,cequalw2
+13,2.0,Sediment,concepts
+14,2.0,Sediment,hec ras
+15,11.0,Sediment,load duration curve
+16,8.0,Sediment,swat
+17,1.0,Sediment,tidal prism
+18,2.0,Sediment,wasp
+19,12.0,Sediment,agnps
+20,6.0,Sediment,Ammonia
+21,1.0,Sediment,Chlorine
+22,4.0,Sediment,Habitat Alterations
+23,2.0,Sediment,Mercury
+24,12.0,Sediment,Metals (other than Mercury)
+25,59.0,Sediment,Nutrients
+26,26.0,Sediment,Organic Enrichment/Oxygen Depletion
+27,2.0,Sediment,Other Cause
+28,32.0,Sediment,Pathogens
+29,2.0,Sediment,Pesticides
+30,3.0,Sediment,Polychlorinated Biphenyls (PCBs)
+31,6.0,Sediment,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+32,41.0,Sediment,Temperature
+33,1.0,Sediment,Total Toxics
+34,1.0,Sediment,Toxic Inorganics
+35,43.0,Sediment,Turbidity
+36,9.0,Sediment,pH/Acidity/Caustic Conditions
+0,9.0,Temperature,usle
+1,32.0,Temperature,sstemp
+2,3.0,Temperature,qual
+3,3.0,Temperature,curve number
+4,2.0,Temperature,spreadsheet
+5,2.0,Temperature,basins
+6,2.0,Temperature,simple method
+7,1.0,Temperature,gwlf
+8,2.0,Temperature,mass balance
+9,2.0,Temperature,cequalw2
+10,1.0,Temperature,hec ras
+11,3.0,Temperature,load duration curve
+12,1.0,Temperature,swat
+13,1.0,Temperature,tidal prism
+14,4.0,Temperature,Ammonia
+15,5.0,Temperature,Metals (other than Mercury)
+16,24.0,Temperature,Nutrients
+17,13.0,Temperature,Organic Enrichment/Oxygen Depletion
+18,1.0,Temperature,Other Cause
+19,26.0,Temperature,Pathogens
+20,1.0,Temperature,Pesticides
+21,5.0,Temperature,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+22,41.0,Temperature,Sediment
+23,15.0,Temperature,Turbidity
+24,9.0,Temperature,pH/Acidity/Caustic Conditions
+0,1.0,Total Toxics,basins
+1,1.0,Total Toxics,wasp
+2,2.0,Total Toxics,Chlorine
+3,1.0,Total Toxics,Mercury
+4,2.0,Total Toxics,Metals (other than Mercury)
+5,3.0,Total Toxics,Organic Enrichment/Oxygen Depletion
+6,3.0,Total Toxics,Other Cause
+7,2.0,Total Toxics,Pathogens
+8,2.0,Total Toxics,Pesticides
+9,3.0,Total Toxics,Polychlorinated Biphenyls (PCBs)
+10,1.0,Total Toxics,Sediment
+11,2.0,Total Toxics,Toxic Organics
+12,2.0,Total Toxics,pH/Acidity/Caustic Conditions
+0,1.0,Toxic Inorganics,usle
+1,1.0,Toxic Inorganics,spreadsheet
+2,2.0,Toxic Inorganics,swat
+3,1.0,Toxic Inorganics,Ammonia
+4,1.0,Toxic Inorganics,Mercury
+5,7.0,Toxic Inorganics,Metals (other than Mercury)
+6,1.0,Toxic Inorganics,Sediment
+7,1.0,Toxic Inorganics,pH/Acidity/Caustic Conditions
+0,2.0,Toxic Organics,wasp
+1,1.0,Toxic Organics,Dioxins
+2,3.0,Toxic Organics,Mercury
+3,3.0,Toxic Organics,Metals (other than Mercury)
+4,1.0,Toxic Organics,Other Cause
+5,1.0,Toxic Organics,Pesticides
+6,2.0,Toxic Organics,Polychlorinated Biphenyls (PCBs)
+7,2.0,Toxic Organics,Total Toxics
+0,2.0,Trash,spreadsheet
+0,5.0,Turbidity,hspf
+1,14.0,Turbidity,usle
+2,12.0,Turbidity,sstemp
+3,1.0,Turbidity,swmm
+4,8.0,Turbidity,curve number
+5,2.0,Turbidity,stepl
+6,60.0,Turbidity,spreadsheet
+7,9.0,Turbidity,basins
+8,1.0,Turbidity,hec-hms
+9,1.0,Turbidity,answers
+10,1.0,Turbidity,simple method
+11,17.0,Turbidity,gwlf
+12,2.0,Turbidity,mass balance
+13,1.0,Turbidity,hec ras
+14,26.0,Turbidity,load duration curve
+15,3.0,Turbidity,swat
+16,2.0,Turbidity,wasp
+17,1.0,Turbidity,agnps
+18,5.0,Turbidity,Ammonia
+19,2.0,Turbidity,Habitat Alterations
+20,10.0,Turbidity,Metals (other than Mercury)
+21,32.0,Turbidity,Nutrients
+22,1.0,Turbidity,Oil and Grease
+23,13.0,Turbidity,Organic Enrichment/Oxygen Depletion
+24,17.0,Turbidity,Pathogens
+25,3.0,Turbidity,Pesticides
+26,5.0,Turbidity,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+27,43.0,Turbidity,Sediment
+28,15.0,Turbidity,Temperature
+29,3.0,Turbidity,pH/Acidity/Caustic Conditions
+0,3.0,pH/Acidity/Caustic Conditions,hspf
+1,5.0,pH/Acidity/Caustic Conditions,usle
+2,1.0,pH/Acidity/Caustic Conditions,sstemp
+3,1.0,pH/Acidity/Caustic Conditions,swmm
+4,4.0,pH/Acidity/Caustic Conditions,curve number
+5,6.0,pH/Acidity/Caustic Conditions,spreadsheet
+6,4.0,pH/Acidity/Caustic Conditions,basins
+7,3.0,pH/Acidity/Caustic Conditions,hec-hms
+8,5.0,pH/Acidity/Caustic Conditions,simple method
+9,5.0,pH/Acidity/Caustic Conditions,gwlf
+10,3.0,pH/Acidity/Caustic Conditions,mass balance
+11,2.0,pH/Acidity/Caustic Conditions,cequalw2
+12,1.0,pH/Acidity/Caustic Conditions,hec ras
+13,4.0,pH/Acidity/Caustic Conditions,load duration curve
+14,7.0,pH/Acidity/Caustic Conditions,swat
+15,1.0,pH/Acidity/Caustic Conditions,wasp
+16,3.0,pH/Acidity/Caustic Conditions,Ammonia
+17,2.0,pH/Acidity/Caustic Conditions,Chlorine
+18,1.0,pH/Acidity/Caustic Conditions,Dioxins
+19,1.0,pH/Acidity/Caustic Conditions,Mercury
+20,24.0,pH/Acidity/Caustic Conditions,Metals (other than Mercury)
+21,12.0,pH/Acidity/Caustic Conditions,Nutrients
+22,15.0,pH/Acidity/Caustic Conditions,Organic Enrichment/Oxygen Depletion
+23,9.0,pH/Acidity/Caustic Conditions,Pathogens
+24,1.0,pH/Acidity/Caustic Conditions,Pesticides
+25,1.0,pH/Acidity/Caustic Conditions,Polychlorinated Biphenyls (PCBs)
+26,2.0,pH/Acidity/Caustic Conditions,Salinity/Total Dissolved Solids/Chlorides/Sulfates
+27,9.0,pH/Acidity/Caustic Conditions,Sediment
+28,9.0,pH/Acidity/Caustic Conditions,Temperature
+29,2.0,pH/Acidity/Caustic Conditions,Total Toxics
+30,1.0,pH/Acidity/Caustic Conditions,Toxic Inorganics
+31,3.0,pH/Acidity/Caustic Conditions,Turbidity

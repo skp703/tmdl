@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>TMDL Models-Pollutants</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <style>
+      #chart {
+        font: 10px sans-serif;
+      }
+
+      .chord path {
+        fill-opacity: .67;
+        stroke: #000;
+        stroke-width: .5px;
+      }
+
+      #circle circle {
+        fill: none;
+        pointer-events: all;
+      }
+
+      #circle:hover path.fade {
+        display: none;
+      }
+
+      #control {
+        position: fixed;
+        left: 20px;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>	
+    <div id="chart"></div>
+	<h1>TMDL model-pollutant relation.</h1>
+	(I realize this is a rather unfortunate name ...suggest something)<p>This is 
+	a work in progress with many errors. PLEASE treat with caution!. Email me if 
+	you have ideas.</p>
+&nbsp;<script type="text/javascript" src="chord.js"></script><strong>How was this chart made?
+    </strong>
+	<ol>
+		<li>The data for this plot comes from USEPA site
+		<a href="http://iaspub.epa.gov/apex/waters/f?p=131:72:::NO:RP:P72_REGION,P72_LEAD_STATE,P72_POLLUTANT_GROUP,P72_FISCAL_YEAR_ESTABLISHED,P72_SEARCH_TERMS:99,XX,XX,XX,tmdl">
+		http://iaspub.epa.gov/apex/waters/f?p=131:72:::NO:RP:P72_REGION,P72_LEAD_STATE,P72_POLLUTANT_GROUP,P72_FISCAL_YEAR_ESTABLISHED,P72_SEARCH_TERMS:99,XX,XX,XX,tmdl</a></li>
+		<li>What I did was to download the table with all records (~20k). This 
+		search should get me anything that has word "tmdl" (hopefully 
+		everything). A hacky scrappy method, but it works. Pls email me if you 
+		can get me these reports directly. What I got is at
+		<a href="https://raw.githubusercontent.com/skp703/tmdl/master/TMDL%2520Document%2520Search.htmlhttps://raw.githubusercontent.com/skp703/tmdl/master/TMDL%2520Document%2520Search.html">
+		https://raw.githubusercontent.com/skp703/tmdl/master/TMDL%20Document%20Search.html</a></li>
+		<li>Now download everything, I retrieved about 2400 files, about 4 gig 
+		of pdfs form USEPA site.</li>
+		<li>Next some automated data manipulation to keep TMDL reports, and 
+		eliminate decision letters and other material that was downloaded. If 
+		you understand python data wrangling, my notebook is at
+		<a href="https://github.com/skp703/tmdl/blob/master/tmdl_scraper.ipynbhttps://github.com/skp703/tmdl/blob/master/tmdl_scraper.ipynb">
+		https://github.com/skp703/tmdl/blob/master/tmdl_scraper.ipynb</a></li>
+		<li>Next search for terms (models names and variations) in the pdf 
+		files. The models I choose where based on interim report by ASCE EWRI 
+		TMDL task committee.</li>
+		<li>The search got me the data needed to create this plot. Raw data used 
+		here also available an
+		<a href="https://raw.githubusercontent.com/skp703/tmdl/master/TMDL_model.csvhttps://raw.githubusercontent.com/skp703/tmdl/master/TMDL_model.csv">
+		https://raw.githubusercontent.com/skp703/tmdl/master/TMDL_model.csv</a></li>
+	</ol>
+	<p>&nbsp;</p>
+  </body>
+</html>
