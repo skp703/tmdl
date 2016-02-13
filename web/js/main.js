@@ -8,6 +8,7 @@ var TMDL_page = (function(main_data, constants) {
     var chord_chart_div;
     
     pub.load = function() {
+        debugger 
         // main function app starts here
         console.log(main_data);
         console.log(constants);
@@ -17,6 +18,7 @@ var TMDL_page = (function(main_data, constants) {
         on("click", reset).attr("value", "Remove filters");
         chord_chart_div = outer_div.append("div").attr("class", "chord_chart");
         init_chord();
+        matrix_init(constants.models.length + constants.pollutants.length);
         // build_critical_number(outer_div, 3);
         d3.select("#nRadius").on("change", function() {
             //console.log(val)
@@ -30,10 +32,10 @@ var TMDL_page = (function(main_data, constants) {
     
     var filtered_data_all;
     var filtered_data;
-    function filter_critical_number(val) { 
+    function filter_critical_number(val) {
         //reset filters
         d3.selectAll(".filter_list span").html("")
-        d3.selectAll(".filtered").classed("filtered",false)
+        d3.selectAll(".filtered").classed("filtered", false)
         filters = [];
         
         // filter array based on citical number. Critical number is the minimum number
@@ -73,10 +75,14 @@ var TMDL_page = (function(main_data, constants) {
     function filter_category(cat) {
         d3.select(".filter_list").append("span").attr("class", "filter_token").append("span")
         .text(good_name(cat));
-        filtered_data = filtered_data.filter(function(d) {
+        filtered_data_tmp = filtered_data.filter(function(d) {
             return d[cat] === 1;
         });
-        make_table(filtered_data);
+        if (filtered_data_tmp.length > 0) {
+            
+            filtered_data = filtered_data_tmp;
+            make_table(filtered_data);
+        }
     }
     
     var table_var;
@@ -108,10 +114,10 @@ var TMDL_page = (function(main_data, constants) {
                     // report link
                     t_body_r.append("td").html("<a href='" + row[d] + "'> report </a>");
                 } else {
-                    t_body_r.append("td").text(row[d]).attr("title",row[d]);
+                    t_body_r.append("td").text(row[d]).attr("title", row[d]);
                 }
             });
-            t_body_r.append("td").text(row.likely_models).attr("title",row.likely_models);
+            t_body_r.append("td").text(row.likely_models).attr("title", row.likely_models);
         });
         
         table_var = $('#table_list').DataTable({
@@ -120,7 +126,7 @@ var TMDL_page = (function(main_data, constants) {
             "order": [[2, "desc"]]
         });
         
-        categories = constants.models.concat(constants.pollutants);
+        var categories = constants.models.concat(constants.pollutants);
         matrix = new Array();
         categories.forEach(function(category, cat_i) {
             tmp_filter = filtered_data.filter(function(k) {
@@ -148,8 +154,9 @@ var TMDL_page = (function(main_data, constants) {
          }
          console.log(_tmp.join(","))
          }**/
-        
-        chord_graph(matrix, categories.map(good_name), categories);
+        var gn = categories.map(good_name)
+        chord_graph(matrix, gn, categories);
+        matrix_update(matrix, gn, categories);
     }
     
     
@@ -211,6 +218,8 @@ var TMDL_page = (function(main_data, constants) {
         chord_data.colors = d3.scale.category20();
     }
     
+    
+    
     function chord_graph(matrix, categories, raw_categories) {
         
         // Compute the chord layout.
@@ -225,20 +234,20 @@ var TMDL_page = (function(main_data, constants) {
         .attr("class", "group").on("mouseover", mouseover)
         .on("click", mouseclick);
         
-        group_data_g.append("path").attr("class",function(d){
+        group_data_g.append("path").attr("class", function(d) {
             if (constants.pollutants.indexOf(raw_categories[d.index]) > -1) {
                 return "pollutants"
-            }else if(constants.models_ws.indexOf(raw_categories[d.index]) > -1){
+            } else if (constants.models_ws.indexOf(raw_categories[d.index]) > -1) {
                 return "models_ws"
-            }else if(constants.models_rwc.indexOf(raw_categories[d.index]) > -1){
+            } else if (constants.models_rwc.indexOf(raw_categories[d.index]) > -1) {
                 return "models_rwc"
-            }else{
+            } else {
                 return "others"
             }
         }).style("fill", function(d, i) {
             return chord_data.colors(d.index);
         });
-
+        
         group_data_g.append("text");
         group_data_g.append("title");
         
@@ -302,23 +311,169 @@ var TMDL_page = (function(main_data, constants) {
                 return p.source.index !== i && p.target.index !== i;
             });
         }
-        function mouseclick(d, i, e) { 
-      
-            var cat_ = raw_categories[d.index]
-            if (filters.indexOf(cat_) <0) {
-                filter_category(cat_);
-                filters.push(cat_);
-                d3.select(d3.event.currentTarget).classed("filtered",true);
-
+        function mouseclick(d, i, e) {
+            if (d.startAngle !== d.endAngle) {
+                var cat_ = raw_categories[d.index]
+                if (filters.indexOf(cat_) < 0) {
+                    filter_category(cat_);
+                    filters.push(cat_);
+                    d3.select(d3.event.currentTarget).classed("filtered", true);
+                
+                }
             }
         }
     }
+    
+    var matrix_data = {};
+    
+    function matrix_init(categories_count) {
+        matrix_data.width = 700;
+        matrix_data.text_len = 100;
+        matrix_data.small = (matrix_data.width - matrix_data.text_len - 10) / categories_count
+        matrix_data.svg = chord_chart_div.append("svg")
+        .attr("class", "matix")
+        .attr("width", matrix_data.width)
+        .attr("height", matrix_data.width)
+        matrix_data.svg.append("g").attr("id", "matrix_gp").attr("transform", 'translate(' + matrix_data.text_len + ',' 
+        + matrix_data.text_len + ')')
+        matrix_data.svg.append("g").attr("id", "txt1")
+        matrix_data.svg.append("g").attr("id", "txt2")
+    
+    }
+    
+    
+    function matrix_update(matrix, categories, raw_categories) {
+        
+        //text
+        d3.select("#txt1").attr("transform", 'translate(' + (matrix_data.text_len - 2) + ',' 
+        + (matrix_data.text_len + matrix_data.small) + ')')
+        .selectAll(".matrix_txt")
+        .data(categories).enter().append("text")
+        .attr("class", function(d, i) {
+            var oc = ""
+            if (constants.pollutants.indexOf(raw_categories[i]) > -1) {
+                oc = "pollutants"
+            } else if (constants.models_ws.indexOf(raw_categories[i]) > -1) {
+                oc = "models_ws"
+            } else if (constants.models_rwc.indexOf(raw_categories[i]) > -1) {
+                oc = "models_rwc"
+            } else {
+                oc = "others"
+            }
+            return "matrix_txt " + oc + "_txt";
+        })
+        .text(function(d) {
+            return d;
+        }).style("text-anchor", "end").style("font-size", matrix_data.small)
+        .attr("transform", function(d, i) {
+            return "translate(0," + i * matrix_data.small + ")"
+        })
+        
+        d3.select("#txt2").attr("transform", 'translate(' + (matrix_data.text_len + matrix_data.small) + ',' 
+        + (matrix_data.text_len - 2) + ')')
+        .selectAll(".matrix_txt")
+        .data(categories).enter().append("text")
+        .attr("class", function(d, i) {
+            var oc = ""
+            if (constants.pollutants.indexOf(raw_categories[i]) > -1) {
+                oc = "pollutants"
+            } else if (constants.models_ws.indexOf(raw_categories[i]) > -1) {
+                oc = "models_ws"
+            } else if (constants.models_rwc.indexOf(raw_categories[i]) > -1) {
+                oc = "models_rwc"
+            } else {
+                oc = "others"
+            }
+            return "matrix_txt " + oc + "_txt";
+        })
+        .text(function(d) {
+            return d;
+        }).style("text-anchor", "start").style("font-size", matrix_data.small)
+        .attr("transform", function(d, i) {
+            return "translate(" + i * matrix_data.small + ",0)rotate(270)"
+        })
+        
+        
+        var max = d3.max(matrix, function(d) {
+            return d3.max(d)
+        })
+        var color = d3.scale.linear()
+        .domain([0, max])
+        .range(["white", "black"]);
+        
+        var mg = d3.select("#matrix_gp")
+        
+        //making cols see notes on nesting https://bost.ocks.org/mike/nest/
+        var cols = mg.selectAll(".matrix_col").data(matrix)
+        cols.enter().append("g")
+        .attr("class", function(d, i) {
+            var oc = ""
+            if (constants.pollutants.indexOf(raw_categories[i]) > -1) {
+                oc = "pollutants"
+            } else if (constants.models_ws.indexOf(raw_categories[i]) > -1) {
+                oc = "models_ws"
+            } else if (constants.models_rwc.indexOf(raw_categories[i]) > -1) {
+                oc = "models_rwc"
+            } else {
+                oc = "others"
+            }
+            return "matrix_col " + oc + "_cell";
+        })
+        .attr("transform", function(d, i) {
+            
+            return "translate(" + i * matrix_data.small + "," + 0 + ")";
+        });
+        cols.exit().remove()
+        //making cells
+        var cells = cols.selectAll(".matrix_cell").data(function(d) {
+            return d;
+        });
+        cells.enter().append("rect").
+        attr("class", function(d, i) {
+            var oc = ""
+            if (constants.pollutants.indexOf(raw_categories[i]) > -1) {
+                oc = "pollutants"
+            } else if (constants.models_ws.indexOf(raw_categories[i]) > -1) {
+                oc = "models_ws"
+            } else if (constants.models_rwc.indexOf(raw_categories[i]) > -1) {
+                oc = "models_rwc"
+            } else {
+                oc = "others"
+            }
+            return "matrix_cell " + oc + "_cell";
+        }).
+        attr("transform", function(d, i) {
+            
+            return "translate(" + 0 + "," + i * matrix_data.small + ")";
+        }).attr("width", matrix_data.small - 1).attr("height", matrix_data.small - 1)
+        .on("mouseover", matrix_mouseover).on("mouseout", matrix_mouseout)
+        cells.exit().remove()
+        
+        //update cells
+        d3.selectAll(".matrix_col .matrix_cell").style("fill", function(d) {
+            return color(d)
+        })
+        
+        function matrix_mouseover(a, b, c) {
+            d3.selectAll("#txt1 text").classed("active", function(d, i) {
+                return d === categories[b]
+            });
+            d3.selectAll("#txt2 text").classed("active", function(d, i) {
+                return d === categories[c];
+            
+            });
+        }
+        function matrix_mouseout(a, b, c) {
+        // d3.selectAll("text").classed("active", false);
+        }
+    }
+    
     var filters = [];
     function reset() {
         make_table(filtered_data_all);
         filtered_data = filtered_data_all;
         d3.selectAll(".filter_list span").html("")
-        d3.selectAll(".filtered").classed("filtered",false)
+        d3.selectAll(".filtered").classed("filtered", false)
         filters = [];
     }
     return pub;

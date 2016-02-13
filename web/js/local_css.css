@@ -1,3 +1,4 @@
+
 .group:hover{
     cursor: pointer; cursor: hand;
 }
@@ -59,4 +60,93 @@ td {
 .others{
     stroke:yellow;
     stroke-width:2px;
+}
+
+/**cell colors**/
+.models_ws_cell .pollutants_cell{
+    stroke:#935555;
+    stroke-width:.1px;
+}
+.models_ws_cell .models_rwc_cell{
+    stroke:#531595;
+    stroke-width:.1px;
+}
+.models_ws_cell .models_ws_cell {
+    stroke:brown;
+    stroke-width:.1px;
+}
+.models_ws_cell .others_cell{
+    stroke:#D29515;
+    stroke-width:.1px;
+}
+.models_rwc_cell .pollutants_cell{
+    stroke:#4040C0;
+    stroke-width:.1px;
+}
+.models_rwc_cell .models_rwc_cell{
+    stroke:blue;
+    stroke-width:.1px;
+}
+.models_rwc_cell .models_ws_cell{
+    stroke:#531595;
+    stroke-width:.1px;
+}
+.models_rwc_cell .others_cell{
+    stroke:#808080;
+    stroke-width:.1px;
+}
+.others_cell .pollutants_cell{
+    stroke:#C0C040;
+    stroke-width:.1px;
+}
+.others_cell .models_rwc_cell{
+    stroke:#808080;
+    stroke-width:.1px;
+}
+.others_cell .models_ws_cell{
+    stroke:#D29515;
+    stroke-width:.1px;
+}
+.others_cell .others_cell{
+    stroke:yellow;
+    stroke-width:.1px;
+}
+.pollutants_cell .pollutants_cell{
+    stroke:gray;
+    stroke-width:.1px;
+}
+.pollutants_cell .models_rwc_cell{
+    stroke:#4040C0;
+    stroke-width:.1px;
+}
+.pollutants_cell .models_ws_cell{
+    stroke:#935555;
+    stroke-width:.1px;
+}
+.pollutants_cell .others_cell{
+    stroke:#C0C040;
+    stroke-width:.1px;
+}
+
+
+
+/**text**/
+.pollutants_txt{
+    stroke:gray;
+    stroke-width:.1px;
+}
+.models_rwc_txt{
+    stroke:blue;
+    stroke-width:.1px;
+}
+.models_ws_txt{
+    stroke:brown;
+    stroke-width:.1px;
+}
+.others_txt{
+    stroke:yellow;
+    stroke-width:.1px;
+}
+text.active{
+    fill:indianred;
 }
