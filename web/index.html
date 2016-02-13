@@ -11,6 +11,9 @@
         <script src="js/main.js">
         </script>
         <link rel="stylesheet" type="text/css" href="js/local_css.css">
+        <script src="js/jquery.growl.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="js/jquery.growl.css">
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.10/css/jquery.dataTables.min.css" />
         <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.10/js/jquery.dataTables.min.js">
         </script>
@@ -47,6 +50,10 @@
             });
 
             function loader() {
+                 $.getJSON('js/message.json', function (message) {
+                         $.growl.warning(message);
+                         });
+                
                 console.log("loader called")
                 var request = $.ajax({
                     url: 'js/data.json',
@@ -91,7 +98,7 @@
                     <a href="mailto:kumar.saurav+tmdl@gmail.com">kumar.saurav+tmdl@gmail.com</a>). Drop me a note if you find this useful or to suggest changes.
 
                 </blockquote>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_zleERgiUy0" frameborder="0" allowfullscreen></iframe>
+               <iframe width="500" height="315" src="https://www.youtube.com/embed/EKU-6JCJ43w" frameborder="0" allowfullscreen></iframe>
                 <h2><a name="info"></a>How to use this app</h2>
                 <p>This app assists with filtering the table of TMDL reports based on your interests. There are two steps to using this app: </p>
                 <ol class="">
